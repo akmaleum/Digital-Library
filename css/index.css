@@ -1,0 +1,141 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #121212;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/masjid.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    padding: -10px;
+    text-align: center;
+    min-height: 50vh; /* Ensure full viewport height */
+    margin: 0; /* Remove any margins */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    position: relative; /* For absolute positioning of children if needed */
+}
+
+main h3{
+    font-size: 6em;
+    margin-top: 40px;
+    letter-spacing: -4px;
+    color: #FFFFFF;
+}
+
+main p{
+    font-size: 2em;
+    margin-top: -90px;
+    letter-spacing: -1.5px;
+    color: #FFFFFF;
+}
+
+header {
+    background-color: #121212;
+    color: #E0E0E0;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 1.8em;
+    margin: 10px 0;
+    color: goldenrod;
+}
+
+header h3{
+    font-weight: 400;
+    font-size: 1.3em;
+    color: #A0A0A0;
+    margin-top: 15px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1.5em;
+}
+
+nav ul li a {
+    color: #E0E0E0;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+    color: #FFD700;
+}
+
+.admin-button-container {
+    position: absolute;
+    top: 150px;
+    right: 20px;
+}
+
+.admin-button {
+    background-color: #FFD700;
+    color: #121212;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.admin-button:hover {
+    background-color: #FFC107;
+}
+
+footer {
+    background-color: #121212;
+    color: #A0A0A0;
+    text-align: center;
+    margin-top: auto;
+    position: relative;
+    z-index:1;
+}
+
+.footer-icon {
+    width: 50px;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: -10px;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .admin-button-container {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    main h2 {
+        font-size: 1.8em;
+    }
+
+    main p {
+        font-size: 1em;
+    }
+}

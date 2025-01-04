@@ -1,0 +1,132 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+header {
+    color: #E0E0E0;
+    padding: 15px 0;
+    text-align: center;
+    font-size: larger;
+}
+
+header h2 {
+    font-size: 1.5em;
+    margin: 5px 0;
+    color: goldenrod;
+}
+
+header h3 {
+    margin: 5px 0;
+    font-weight: 400;
+    font-size: 1.3em;
+    color: #A0A0A0;
+}
+
+header h1 {
+    font-size: 3.8em;
+    margin: 10px 0;
+    letter-spacing: -2.5px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #b0b0b0;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #2b2b2b;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.toggle-link {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.toggle-link a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 15px;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.toggle-link a:hover {
+    background: #FFD700;
+    color: #121212;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    color: #A0A0A0;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.footer-icon {
+    width: 50px;
+    height: auto;
+    margin-bottom: -15px;
+    margin-top: 20px;
+}

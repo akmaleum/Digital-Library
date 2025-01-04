@@ -1,0 +1,161 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #121212;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #121212;
+    color: #E0E0E0;
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    font-size: larger;
+}
+
+header h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: goldenrod;
+}
+
+header h3 {
+    font-weight: 400;
+    font-size: 1.3em;
+    color: #A0A0A0;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+header h1 {
+    font-size: 3.8em;
+    margin: 10px 0;
+    letter-spacing: -2.5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #E0E0E0;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+    color: #FFD700;
+}
+
+main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/masjid.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    padding: -10px;
+    text-align: center;
+    min-height: 50vh; /* Ensure full viewport height */
+    margin: 0; /* Remove any margins */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    position: relative; /* For absolute positioning of children if needed */
+}
+
+main h2 {
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    margin-top: -60px;
+    font-size: 2.5em;
+    letter-spacing: -1.5px;
+}
+
+main p{
+    color: #FFFFFF;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+/* List styles */
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.cta-button {
+    background-color: #FFD700; /* Gold color */
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #FFC107; /* Darker gold on hover */
+}
+
+
+/* Update footer to stay at bottom */
+footer {
+    background-color: #121212;
+    color: #A0A0A0;
+    text-align: center;
+    padding: 10px 20px;
+    border-top: 1px solid #333;
+    margin-top: auto;
+}
+
+/* Keep your existing footer icon styles */
+.footer-icon {
+    width: 50px;
+    height: auto;
+    margin-bottom: -15px;
+    margin-top: 10px;
+}
+
+.flag-counter {
+    text-align: center; /* Center-aligns text and inline elements */
+    margin-top: 70px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Smaller font size for mobile */
+    }
+
+    .hero h2 {
+        font-size: 2em; /* Smaller font size for mobile */
+    }
+
+    .hero p {
+        font-size: 1em; /* Smaller font size for mobile */
+    }
+
+    .cta-button {
+        padding: 8px 16px; /* Adjust button size for mobile */
+    }
+}
